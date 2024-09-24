@@ -1,0 +1,33 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+
+  --primary-text-color: #ECDFCC;
+  --headline-text-color: #20201f;
+  --headline-text-border: #477438;
+  --headline-shadow-color: #ECDFCC;
+
+  --background-color: #F5F5F5;
+  --primary-box-shadow: #bbbab8 0px 20px 50px 0px;
+
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--background-color);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  /* padding: 0; */
+}
+

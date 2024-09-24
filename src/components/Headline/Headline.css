@@ -1,0 +1,24 @@
+.headline {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--background-color);
+  text-shadow: var(--headline-shadow-color) 0.2rem -0.1rem 0;
+  -webkit-text-stroke: 1px var(--headline-text-color);
+  margin: 0.5rem;
+  transition: color 1s;
+}
+
+.headline-active {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--headline-text-color); 
+  text-shadow: var(--headline-shadow-color) 0.2rem -0.1rem 0;
+  -webkit-text-stroke: 1px var(--headline-text-color);
+  margin: 0.5rem;
+  transition: color 1s;
+}
+
+.navbar-button {
+  text-decoration: none;
+  scroll-behavior: smooth;
+}

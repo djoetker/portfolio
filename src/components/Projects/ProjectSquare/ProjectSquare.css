@@ -1,0 +1,104 @@
+.pj-square {
+  height: 450px;
+  width: 550px;
+  display: flex;
+  flex-direction: column;
+}
+
+.image-section {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.image-section img {
+  height: 300px;
+}
+
+.information-section {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem 0 1rem;
+}
+
+.title-section {
+  height: 25%;
+}
+
+.information-section h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--background-color);
+  text-shadow: var(--headline-shadow-color) 0.2rem -0.1rem 0;
+  -webkit-text-stroke: 1px var(--headline-text-border);
+}
+
+.description-section {
+  height: 50%;
+}
+
+.information-section p {
+  font-size: 1rem;
+  font-weight: 100;
+  color: var(--headline-text-color);
+  text-align: justify;
+  line-height: 1.5;
+}
+
+.button-tags {
+  height: 25%;
+}
+
+.button-tags button {
+  border: 1px solid var(--headline-text-border);
+  border-radius: 10px;
+  outline: none;
+  font-size: 1.5rem;
+  font-weight: 100 !important;
+  box-shadow: var(--headline-shadow-color) 0.2rem -0.1rem 0;
+  padding: 0.25rem 1rem 0.25rem 1rem;
+  cursor: pointer;
+}
+
+.button-tags button:focus {
+  box-shadow: none;
+}
+
+@media only screen and (max-width: 767px) {
+  .pj-square {
+    /* height: 350px; */
+    width: 100%;
+    max-width: 550px;
+  }
+
+  .title-section {
+    height: 15%;
+  }
+
+  .information-section {
+    width: 100%;
+    padding: 0 0.5rem 0 0.5rem;
+  }
+
+  
+  .information-section h2 {
+    font-size: 1.5rem;
+  }
+  
+  .description-section {
+    height: 70%;
+  }
+
+  .button-tags {
+    height: 15%;
+  }
+
+  .button-tags button {
+    font-size: 1rem;
+  }
+
+}

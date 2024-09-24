@@ -1,0 +1,14 @@
+.welcome-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  height: fit-content;
+}
+
+.welcome-container h1 {
+  font-size: 10rem;
+  color: #333;
+  margin: 1rem;
+}
