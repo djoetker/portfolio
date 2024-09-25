@@ -1,8 +1,18 @@
-# React + Vite
+# Portfolio Website
+This is my personal portfolio website, built with React and Framer Motion for smooth animations. The website is fully responsive and showcases some of my projects as a full-stack web developer.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Features
+Responsive design for all screen sizes
+Smooth animations using Framer Motion
+Dynamic project showcase (updated as new projects are added)
+## Tech Stack
+React: Front-end framework
+Framer Motion: Animation library
+CSS: Custom styling for layout and responsiveness
+Projects
+A few projects are already up, and more will be added as the portfolio grows!
 
-Currently, two official plugins are available:
+## Future Updates
+The portfolio will continuously be updated with new features and more projects, so stay tuned!
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Feel free to check it out and reach out if you'd like to connect!
