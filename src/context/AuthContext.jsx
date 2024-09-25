@@ -5,20 +5,24 @@ import Cookies from "js-cookie";
 const AuthContext = createContext({});
 
 function AuthContextProvider({ children }) {
-  const [password, setPassword] = useState("");
+  const [password, setPassword] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
   const navigate = useNavigate();
 
   useEffect(() => {
     // const password = localStorage.getItem("password");
     const password = Cookies.get("pwd_active_one");
     if (password) {
-      setPassword(password);
+      setPassword(true);
+      setIsLoading(false);
       navigate("/portfolio");
+    } else {
+      setIsLoading(false);
     }
   }, []);
 
   return (
-    <AuthContext.Provider value={{ password, setPassword }}>
+    <AuthContext.Provider value={{ password, setPassword, isLoading, setIsLoading }}>
       {children}
     </AuthContext.Provider>
   );

@@ -16,7 +16,7 @@ function Welcome() {
   const submitHandler = (e) => {
     e.preventDefault();
     if (userInput === "iwouldhirehim") {
-      setPassword(userInput);
+      setPassword(true);
       // localStorage.setItem("password", true);
       Cookies.set("pwd_active_one", true, { expires: 1 });
       navigate("/portfolio");
