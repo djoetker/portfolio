@@ -16,7 +16,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Welcome />} />
           <Route element={<PrivateRoute />}>
-            <Route path='portfolio' element={<Layout />} >
+            <Route path='/portfolio' element={<Layout />} >
 
               <Route index element={<Portfolio />} />
             </Route>
