@@ -46,11 +46,15 @@ function Welcome() {
 
       </motion.div>
 
-      <div>
-        <section>
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1, duration: 3 }}
+      >
+        <section className="welcome-container">
           <form onSubmit={submitHandler}>
             <input
-              type="text"
+              type="password"
               value={userInput}
               onChange={(e) => setUserInput(e.target.value)}
               placeholder="Enter password"
@@ -60,7 +64,7 @@ function Welcome() {
             {!pwCheck && <p>Incorrect password</p>}
           </form>
         </section>
-      </div>
+      </motion.div>
     </>
   );
 };

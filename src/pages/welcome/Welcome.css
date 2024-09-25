@@ -1,9 +1,9 @@
 .welcome-container {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: fit-content;
   height: fit-content;
 }
 
@@ -11,4 +11,34 @@
   font-size: 10rem;
   color: #333;
   margin: 1rem;
+}
+
+form input {
+  border: 1px solid var(--headline-text-border);
+  border-radius: 10px 0 0 10px;
+  outline: none;
+  font-size: 1.25rem;
+  font-weight: 100 !important;
+  box-shadow: var(--headline-shadow-color) 0.2rem -0.1rem 0;
+  padding: 0.25rem 1rem 0.25rem 1rem;
+}
+
+form button {
+  border: 1px solid var(--headline-text-border);
+  border-left: none;
+  border-radius: 0px 10px 10px 0px;
+  outline: none;
+  font-size: 1.25rem;
+  font-weight: 100 !important;
+  box-shadow: var(--headline-shadow-color) 0.2rem -0.1rem 0;
+  padding: 0.25rem 1rem 0.25rem 1rem;
+}
+
+form button:hover {
+  background-color: var(--headline-text-border);
+  color: var(--background-color);
+}
+
+form button:active {
+  box-shadow: inset 1px 1px 10px #333;
 }
