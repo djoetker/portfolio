@@ -7,25 +7,6 @@ import { useSectionVisibility } from "../../context/SectionVisibility";
 import { useEffect, useRef } from "react";
 import { useInView } from "framer-motion";
 
-const gridContainerVariants = {
-  hidden: { opacity: 0 },
-  show: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.5
-    }
-  }
-};
-
-const gridSquareVariants = {
-  hidden: { opacity: 0 },
-  show: {
-    opacity: 1,
-    transition: {
-      duration: 4
-    }
-  }
-};
 
 function Information() {
   const { activeSection, setActiveSection } = useSectionVisibility();

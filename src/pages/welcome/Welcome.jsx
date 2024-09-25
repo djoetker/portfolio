@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import Cookies from "js-cookie";
 
 import "./Welcome.css";
 import { useAuth } from "../../context/AuthContext";
@@ -14,9 +15,10 @@ function Welcome() {
 
   const submitHandler = (e) => {
     e.preventDefault();
-    if (userInput === "password") {
+    if (userInput === "iwouldhirehim") {
       setPassword(userInput);
-      localStorage.setItem("password", true);
+      // localStorage.setItem("password", true);
+      Cookies.set("pwd_active_one", true, { expires: 1 });
       navigate("/portfolio");
     } else {
       setPwCheck(false);

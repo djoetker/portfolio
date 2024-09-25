@@ -14,6 +14,13 @@ function Contact() {
   const sectionRef = useRef(null);
   const isInView = useInView(sectionRef, { margin: "-400px 0px -400px 0px", threshold: 0.2 });
 
+
+  let initialStyle;
+  const isMobile = window.innerWidth < 768;
+  if (!isMobile) {
+    initialStyle = { opacity: 0 };
+  }
+
   useEffect(() => {
     if (isInView) {
       console.log("Contact is in view");
@@ -26,7 +33,7 @@ function Contact() {
       ref={sectionRef}
       className="contact-container"
       id="contact"
-      initial={{ opacity: 0 }}
+      initial={initialStyle}
       whileInView={{
         opacity: 1,
         transition: {

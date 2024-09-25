@@ -9,30 +9,54 @@ import { useEffect, useRef } from "react";
 
 
 
-const gridContainerVariants = {
-  hidden: { opacity: 0 },
-  show: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.5
-    }
-  }
-};
+// const gridContainerVariants = {
+//   hidden: { opacity: 0 },
+//   show: {
+//     opacity: 1,
+//     transition: {
+//       staggerChildren: 0.5
+//     }
+//   }
+// };
 
-const gridSquareVariants = {
-  hidden: { opacity: 0 },
-  show: {
-    opacity: 1,
-    transition: {
-      duration: 4
-    }
-  }
-};
+// const gridSquareVariants = {
+//   hidden: { opacity: 0 },
+//   show: {
+//     opacity: 1,
+//     transition: {
+//       duration: 4
+//     }
+//   }
+// };
 
 function Projects() {
   const { activeSection, setActiveSection } = useSectionVisibility();
   const sectionRef = useRef(null);
   const isInView = useInView(sectionRef, { margin: "-400px 0px -400px 0px", threshold: 0.8 });
+
+  let gridContainerVariants, gridSquareVariants;
+
+  const isMobile = window.innerWidth < 768;
+  if (!isMobile) {
+    gridContainerVariants = {
+      hidden: { opacity: 0 },
+      show: {
+        opacity: 1,
+        transition: {
+          staggerChildren: 0.5
+        }
+      }
+    };
+    gridSquareVariants = {
+      hidden: { opacity: 0 },
+      show: {
+        opacity: 1,
+        transition: {
+          duration: 4
+        }
+      }
+    };
+  }
 
   useEffect(() => {
     if (isInView) {

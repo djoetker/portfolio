@@ -1,5 +1,6 @@
 import { createContext, useContext, useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import Cookies from "js-cookie";
 
 const AuthContext = createContext({});
 
@@ -8,7 +9,8 @@ function AuthContextProvider({ children }) {
   const navigate = useNavigate();
 
   useEffect(() => {
-    const password = localStorage.getItem("password");
+    // const password = localStorage.getItem("password");
+    const password = Cookies.get("pwd_active_one");
     if (password) {
       setPassword(password);
       navigate("/portfolio");
