@@ -1,5 +1,5 @@
 import "./Introduction.css";
-import jan_siede from "../../assets/images/photo_siede.png";
+import jan_siede from "../../assets/images/photo_siede.jpg";
 import { useSectionVisibility } from "../../context/SectionVisibility";
 
 import { useEffect, useRef } from "react";
@@ -11,7 +11,6 @@ function Introduction() {
   const sectionRef = useRef(null);
   const isInView = useInView(sectionRef, { margin: "-400px 0px -300px 0px" });
 
-  console.log(isInView);
 
   useEffect(() => {
     if (isInView) {
