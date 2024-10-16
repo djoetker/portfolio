@@ -74,11 +74,11 @@
 .tags_container {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  /* align-items: center; */
   flex-wrap: nowrap;
   white-space: nowrap;
   gap: 0.5rem;
-  width: 75%;
+  /* width: 75%; */
   margin-left: 1rem;
   text-overflow: ellipsis;
   overflow: scroll;
@@ -88,7 +88,10 @@
 .tag {
   display: inline-block;
   font-style: italic;
-
+  border: 1px solid var(--headline-text-border);
+  border-radius: 10px;
+  height: fit-content;
+  padding: 0 0.5rem 0 0.5rem;
 }
 
 @media only screen and (max-width: 767px) {
