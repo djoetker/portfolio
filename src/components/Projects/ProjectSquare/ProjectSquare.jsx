@@ -17,6 +17,11 @@ function ProjectSquare({ project }) {
           <a href={project.link} target="_blank" rel="noreferrer">
             <button>View</button  >
           </a>
+          <section className="tags_container">
+            {project.tags.map((tag, index) => (
+              <p key={index} className="tag">{tag}</p>
+            ))}
+          </section>
         </div>
       </section>
     </div>
