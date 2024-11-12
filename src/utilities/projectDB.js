@@ -31,7 +31,7 @@ const projectDB = [
   {
     image: rawmusic,
     imagetitle: "raw-music.org website design",
-    title: "raw-music.org",
+    title: "raw-music.org [WIP]",
     description: "Artist website for electronic music producer with a focus on minimalistic design and easy navigation. Shows links to social media and music platforms and has a self-made music player integrated with some unreleased music. Includes a moving generative art background.",
     link: "https://raw-music.org/",
     tags: ["Tailwind", "Next.js", "Typescript", "AWS S3 & Amplify", "Web Hosting", "P5.js"]
