@@ -1,6 +1,8 @@
 import unsocial_media from "../assets/images/unsocial_media.png";
 import save_space from "../assets/images/save_space.png";
 import susanne_dicken from "../assets/images/susanne_dicken.png";
+import rawmusic from "../assets/images/raw-music.png";
+
 
 const projectDB = [
   {
@@ -25,6 +27,14 @@ const projectDB = [
     description: "Helped to update the page with new content, standardize the design of each page and maintain the site and server.",
     link: "https://susanne-dicken.de/",
     tags: ["HTML", "CSS", "Wordpress", "Web Hosting"]
+  },
+  {
+    image: rawmusic,
+    imagetitle: "raw-music.org website design",
+    title: "raw-music.org",
+    description: "Artist website for electronic music producer with a focus on minimalistic design and easy navigation. Shows links to social media and music platforms and has a self-made music player integrated with some unreleased music. Includes a moving generative art background.",
+    link: "https://raw-music.org/",
+    tags: ["Tailwind", "Next.js", "Typescript", "AWS S3 & Amplify", "Web Hosting", "P5.js"]
   },
 ];
 
